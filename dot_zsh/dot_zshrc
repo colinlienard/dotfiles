@@ -1,0 +1,66 @@
+# zmodload zsh/zprof
+
+# Paths
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export ZSH=$HOME/.zsh
+
+# Config
+export LANG="en_US.UTF-8"
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
+# Plugins
+source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+export NVM_LAZY_LOAD=true
+source $ZSH/plugins/zsh-nvm/zsh-nvm.plugin.zsh
+
+# Aliases
+alias sw="git switch"
+alias pull="git pull"
+alias push="git push"
+alias pushf="git push --force"
+alias commit="git commit -m"
+alias emptycommit="git commit --allow-empty -m 'chore: empty commit' && git push"
+alias add="git add ."
+alias status="git status"
+alias checkout="git checkout"
+alias branch="git branch"
+alias stash="git stash"
+alias msfront="cd ~/ms/mobsuccess-front && clear"
+alias killxcode="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist"
+alias kumo="cd ~/dev/kumo && clear"
+alias master="git switch master && git pull && clear"
+alias main="git switch main && git pull && clear"
+alias lg="lazygit"
+
+# Mobsuccess
+if [[ "$PWD" =~ .*microservice.* ]]; then
+  export PATH=$HOME/.pyenv/versions/3.8.10/bin:$HOME/.local/bin:$HOME:$PATH
+  aws --profile=production codeartifact login --tool pip --domain mobsuccess --domain-owner 983851922138 --repository python
+fi
+
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Node
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export COREPACK_ENABLE_AUTO_PIN=0
+
+# pnpm
+export PNPM_HOME="/Users/colinlienard/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# Starship
+eval "$(starship init zsh)"
+
+# zprof

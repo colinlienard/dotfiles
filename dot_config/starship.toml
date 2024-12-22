@@ -1,0 +1,18 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+[line_break]
+disabled = true
+
+[git_branch]
+truncation_length = 32
+
+[git_status]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
