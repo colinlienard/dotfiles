@@ -7,34 +7,31 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
   "vim_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Moon"
+    "light": "Vitesse Patched Light Soft",
+    "dark": "Vitesse Patched Dark Soft"
   },
   "tab_size": 2,
   "buffer_font_family": "JetBrains Mono",
+  "buffer_font_features": {
+    "calt": false
+  },
   "vertical_scroll_margin": 12,
   "code_actions_on_format": {
     "source.fixAll.eslint": true
   },
   "tabs": {
     "git_status": true
-  },
-  // Rosé Pine theme overrides
-  "experimental.theme_overrides": {
-    "border": "#2a273f",
-    "border.variant": "#2a283e",
-    "panel.background": "#232136",
-    "tab_bar.background": "#232136",
-    "title_bar.background": "#232136",
-    "status_bar.background": "#232136",
-    "toolbar.background": "#2a283e",
-    "tab.active_background": "#2a283e",
-    "tab.inactive_background": "#232136",
-    "background": "#232136"
   }
 }

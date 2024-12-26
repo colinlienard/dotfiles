@@ -16,6 +16,7 @@
   {
     "context": "Editor",
     "bindings": {
+      "cmd-k cmd-r": "workspace::Reload"
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
   },
