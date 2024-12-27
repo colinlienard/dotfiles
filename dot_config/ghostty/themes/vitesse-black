@@ -17,5 +17,3 @@ palette = 15=#dbd7ca
 background = 000000
 foreground = dbd7ca
 cursor-color = dbd7ca
-selection-background = 121212
-selection-foreground = dbd7ca
