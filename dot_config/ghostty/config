@@ -1,5 +1,6 @@
 adjust-cursor-thickness = 14
 font-family = JetBrains Mono
+font-feature = -calt
 font-size = 14
 theme = dark:vitesse-dark-soft,light:vitesse-light-soft
 window-padding-x = 12
