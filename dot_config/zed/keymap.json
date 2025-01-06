@@ -9,15 +9,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-p": "projects::OpenRecent"
-      // "shift shift": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "cmd-k cmd-r": "workspace::Reload"
-      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "alt-p": "projects::OpenRecent",
+      "cmd-k g": ["task::Spawn", { "task_name": "lazygit" }]
     }
   },
   {

@@ -19,8 +19,8 @@
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
-    "light": "Vitesse Patched Light Soft",
-    "dark": "Vitesse Patched Dark Soft"
+    "light": "Vitesse Refined Light Soft",
+    "dark": "Vitesse Refined Dark Soft"
   },
   "tab_size": 2,
   "buffer_font_family": "JetBrains Mono",
