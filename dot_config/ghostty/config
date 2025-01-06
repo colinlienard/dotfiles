@@ -1,7 +1,8 @@
-adjust-cursor-thickness = 14
+cursor-style = block
 font-family = JetBrains Mono
 font-feature = -calt
 font-size = 14
+shell-integration-features = no-cursor
 theme = dark:vitesse-dark-soft,light:vitesse-light-soft
 window-padding-x = 12
 window-padding-y = 12
