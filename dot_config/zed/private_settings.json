@@ -10,7 +10,7 @@
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "model": "claude-3-5-sonnet"
     },
     "version": "2"
   },
@@ -27,11 +27,17 @@
   "buffer_font_features": {
     "calt": false
   },
+  "hover_popover_delay": 0,
   "vertical_scroll_margin": 12,
+  "tabs": {
+    "git_status": true,
+    "show_diagnostics": "all",
+    "file_icons": true
+  },
+  "search": {
+    "case_sensitive": true
+  },
   "code_actions_on_format": {
     "source.fixAll.eslint": true
-  },
-  "tabs": {
-    "git_status": true
   }
 }
