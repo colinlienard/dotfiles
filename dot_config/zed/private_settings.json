@@ -22,7 +22,6 @@
     "light": "Vitesse Refined Light Soft",
     "dark": "Vitesse Refined Dark Soft"
   },
-  "tab_size": 2,
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_features": {
     "calt": false
@@ -40,4 +39,7 @@
   "code_actions_on_format": {
     "source.fixAll.eslint": true
   }
+  // "features": {
+  //   "inline_completion_provider": "none"
+  // }
 }
