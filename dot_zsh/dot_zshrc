@@ -30,11 +30,10 @@ alias checkout="git checkout"
 alias branch="git branch"
 alias stash="git stash"
 alias msfront="cd ~/ms/mobsuccess-front && clear"
-alias killxcode="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist"
-alias kumo="cd ~/dev/kumo && clear"
 alias master="git switch master && git pull && clear"
 alias main="git switch main && git pull && clear"
 alias lg="lazygit"
+alias ls="ls --color"
 
 # Mobsuccess
 if [[ "$PWD" =~ .*microservice.* ]]; then
