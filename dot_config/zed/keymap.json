@@ -10,9 +10,9 @@
     "context": "Workspace",
     "bindings": {
       "alt-p": "projects::OpenRecent",
-      "cmd-k g": ["task::Spawn", { "task_name": "lazygit" }],
       "alt-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "alt-l": ["workspace::ActivatePaneInDirection", "Right"]
+      "alt-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "cmd-k g": ["task::Spawn", { "task_name": "lazygit" }]
     }
   },
   {
