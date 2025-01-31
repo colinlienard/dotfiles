@@ -16,6 +16,12 @@
     }
   },
   {
+    "context": "Editor",
+    "bindings": {
+      "cmd-@": "editor::ShowInlineCompletion"
+    }
+  },
+  {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space j": "editor::GoToHunk",
