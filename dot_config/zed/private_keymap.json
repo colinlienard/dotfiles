@@ -10,15 +10,15 @@
     "context": "Workspace",
     "bindings": {
       "alt-p": "projects::OpenRecent",
-      "alt-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "alt-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
       "cmd-k g": ["task::Spawn", { "task_name": "lazygit" }]
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "cmd-@": "editor::ShowInlineCompletion"
+      "cmd-@": "editor::ShowEditPrediction"
     }
   },
   {
