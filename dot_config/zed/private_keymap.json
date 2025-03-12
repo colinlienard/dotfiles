@@ -9,6 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
+      "cmd-shift-g": "git_panel::ToggleFocus",
       "alt-p": "projects::OpenRecent",
       "alt-h": "workspace::ActivatePaneLeft",
       "alt-l": "workspace::ActivatePaneRight",
@@ -25,9 +26,9 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "space j": "editor::GoToHunk",
-      "space k": "editor::GoToPrevHunk",
+      "space k": "editor::GoToPreviousHunk",
       "space shift-j": "editor::GoToDiagnostic",
-      "space shift-k": "editor::GoToPrevDiagnostic"
+      "space shift-k": "editor::GoToPreviousDiagnostic"
     }
   }
 ]

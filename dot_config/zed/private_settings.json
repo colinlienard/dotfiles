@@ -35,6 +35,13 @@
     "show_diagnostics": "all",
     "file_icons": true
   },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 0
+    }
+  },
   "search": {
     "case_sensitive": true
   },
@@ -43,5 +50,14 @@
   },
   "features": {
     "edit_prediction_provider": "zed"
+  },
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "svelte": "html"
+        }
+      }
+    }
   }
 }
