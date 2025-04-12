@@ -14,7 +14,13 @@ truncation_length = 32
 [git_status]
 disabled = true
 
+[aws]
+disabled = true
+
 [nodejs]
+disabled = true
+
+[bun]
 disabled = true
 
 [python]
