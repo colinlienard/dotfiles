@@ -1,22 +1,22 @@
 [user]
-	name = Colin Lienard
-	email = colin.lienard87@gmail.com
+  name = Colin Lienard
+  email = colin.lienard87@gmail.com
 
 [core]
   editor = vim
 
 [init]
-    defaultBranch = main
+  defaultBranch = main
 
 [pull]
-	rebase = true
+  rebase = true
 
 [push]
-    autoSetupRemote = true
-    default = current
+  autoSetupRemote = true
+  default = current
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true

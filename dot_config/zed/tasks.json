@@ -40,12 +40,5 @@
     //         }
     //     }
     "shell": "system"
-  },
-  {
-    "label": "lazygit",
-    "command": "lazygit",
-    "use_new_terminal": true,
-    "reveal_target": "center",
-    "hide": "always"
   }
 ]
