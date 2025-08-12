@@ -21,3 +21,9 @@ Then go the to the source directory to commit the changes:
 ```bash
 chezmoi cd
 ```
+
+To get the latest changes from remote, run:
+
+```bash
+chezmoi update
+```
