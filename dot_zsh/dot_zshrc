@@ -6,6 +6,7 @@ export ZSH=$HOME/.zsh
 
 # Config
 export LANG="en_US.UTF-8"
+export TERM=xterm-256color
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 bindkey '^[[A' up-line-or-search
@@ -34,6 +35,12 @@ alias master="git switch master && git pull && clear"
 alias main="git switch main && git pull && clear"
 alias lg="lazygit"
 alias ls="ls --color"
+alias pi="ssh pi@192.168.1.99"
+
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # Python
 export PYENV_ROOT="$HOME/.pyenv"

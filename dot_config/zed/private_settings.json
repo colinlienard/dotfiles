@@ -8,12 +8,15 @@
 // command palette
 {
   "agent": {
-    "default_profile": "write",
+    "play_sound_when_agent_done": true,
+    "default_profile": "ask",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
-    },
-    "version": "2"
+      "provider": "copilot_chat",
+      "model": "gpt-5"
+    }
+  },
+  "toolbar": {
+    "quick_actions": false
   },
   "vim_mode": true,
   "vim": {
@@ -49,11 +52,15 @@
       "update_debounce_ms": 0
     }
   },
-  "search": {
-    "case_sensitive": true
-  },
+  // "search": {
+  //   "case_sensitive": true
+  // },
   "code_actions_on_format": {
     "source.fixAll.eslint": true
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "features": {
     "edit_prediction_provider": "zed"
