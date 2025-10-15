@@ -9,10 +9,10 @@
 {
   "agent": {
     "play_sound_when_agent_done": true,
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-5"
     }
   },
   "toolbar": {
@@ -35,7 +35,6 @@
     "calt": false
   },
   "tab_size": 2,
-  "hover_popover_delay": 0,
   "vertical_scroll_margin": 12,
   "terminal": {
     "dock": "right"
@@ -52,11 +51,11 @@
       "update_debounce_ms": 0
     }
   },
-  // "search": {
-  //   "case_sensitive": true
-  // },
   "code_actions_on_format": {
     "source.fixAll.eslint": true
+  },
+  "title_bar": {
+    "show_branch_icon": true
   },
   "tab_bar": {
     "show_nav_history_buttons": false,

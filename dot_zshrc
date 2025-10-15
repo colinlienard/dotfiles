@@ -1,0 +1,39 @@
+# Performance profiling
+# zmodload zsh/zprof
+
+# Shell options
+setopt HIST_IGNORE_ALL_DUPS      # Remove older duplicate entries
+setopt HIST_FIND_NO_DUPS         # Don't show dupes when searching
+setopt SHARE_HISTORY             # Share history between all sessions in real-time
+setopt INC_APPEND_HISTORY        # Write to history immediately, not on shell exit
+
+# Plugins
+source "$HOME/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
+source "$HOME/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
+
+# Aliases
+## Git
+alias add="git add ."
+alias pull="git pull"
+alias push="git push"
+alias pushf="git push --force"
+alias commit="git commit -m"
+alias emptycommit="git commit --allow-empty -m 'chore: empty commit' && git push"
+alias sw="git switch"
+alias stash="git stash"
+alias master="git switch master && git pull && clear"
+alias main="git switch main && git pull && clear"
+alias lg="lazygit"
+## Utilities
+alias ls="ls --color"
+alias pi="ssh pi@192.168.1.99"
+alias n="noti"
+
+# Prompt
+eval "$(starship init zsh)"
+
+# Source work-specific config if it exists
+[[ -f "$HOME/.zshrc-work" ]] && source "$HOME/.zshrc-work"
+
+# Performance profiling
+# zprof

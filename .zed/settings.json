@@ -1,0 +1,6 @@
+{
+  "file_types": {
+    "Shell Script": ["dot_zshrc", "dot_zshenv"],
+    "Git Config": ["dot_gitconfig"]
+  }
+}

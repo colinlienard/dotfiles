@@ -1,8 +1,8 @@
 # dotfiles
 
-Managed with [chezmoi](https://www.chezmoi.io/).
+My dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
----
+## Usage
 
 To add a new file, run:
 
@@ -20,6 +20,7 @@ Then go the to the source directory to commit the changes:
 
 ```bash
 chezmoi cd
+# git add, commit, push
 ```
 
 To get the latest changes from remote, run:
