@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "git_panel": {
+    "sort_by_path": true
+  },
+  "formatter": ["auto", { "code_action": "source.fixAll.eslint" }],
   "agent": {
     "play_sound_when_agent_done": true,
     "default_profile": "write",
@@ -22,7 +26,7 @@
   "vim": {
     "toggle_relative_line_numbers": true
   },
-  "ui_font_size": 15,
+  "ui_font_size": 15.0,
   "buffer_font_size": 13,
   "theme": {
     "mode": "system",
@@ -41,8 +45,8 @@
   },
   "tabs": {
     "git_status": true,
-    "show_diagnostics": "all",
-    "file_icons": true
+    "file_icons": true,
+    "show_diagnostics": "all"
   },
   "diagnostics": {
     "include_warnings": true,
@@ -50,9 +54,6 @@
       "enabled": true,
       "update_debounce_ms": 0
     }
-  },
-  "code_actions_on_format": {
-    "source.fixAll.eslint": true
   },
   "title_bar": {
     "show_branch_icon": true
